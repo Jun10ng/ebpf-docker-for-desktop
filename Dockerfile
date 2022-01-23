@@ -14,7 +14,13 @@ RUN apt install -y make gcc flex bison libelf-dev bc
 RUN apt install -y libssl-dev vim
 
 
-COPY hello_world.py /root
-COPY linuxkit-start.sh /root
+COPY linuxkit-dl.sh /root
+COPY linuxkit-complier.sh /root
 
-CMD cd /root/ && sh ./linuxkit-start.sh && mount -t debugfs debugfs /sys/kernel/debug && /bin/bash
+RUN sh /root/linuxkit-dl.sh 
+RUN echo "download success"
+
+RUN sh /root/linuxkit-complier.sh
+RUN echo "complier successs"
+
+CMD mount -t debugfs debugfs /sys/kernel/debug && /bin/bash
