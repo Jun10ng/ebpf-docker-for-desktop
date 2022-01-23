@@ -3,6 +3,13 @@ A docker of learning eBPF at MacOS/Win.
 Ubuntu: 21.04
 Kernel: 5.10.76
 
+## Run it!
+```
+cd ebpf-for-desktop/
+docker build -t ebpf:v1 .
+sh ./docker-run.sh
+```
+
 ## How
 MacOS/Win short of some linuxkit/header file, So I based on 
 [for-desktop-kernel](https://hub.docker.com/r/docker/for-desktop-kernel) image
