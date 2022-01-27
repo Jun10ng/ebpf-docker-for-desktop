@@ -13,9 +13,9 @@ sh ./docker-run.sh
 ```
 
 ## How
-MacOS/Win short of some linuxkit/header file, So I based on 
+MacOS/Win is short of some linuxkit/header file, so I built this image based on 
 [for-desktop-kernel](https://hub.docker.com/r/docker/for-desktop-kernel) image
-and [linux-kernel source code](https://mirrors.aliyun.com/linux-kernel/v5.x/linux-5.10.76.tar.gz)  build it.
+and [linux-kernel source code](https://mirrors.aliyun.com/linux-kernel/v5.x/linux-5.10.76.tar.gz).
 
 
 ## FAQ
