@@ -3,7 +3,7 @@ cd /lib/modules/$(uname -r)
 
 
 echo "coping file to source/"
-mkdir  /usr/src/$(uname -r)/
+mkdir -p /usr/src/$(uname -r)/
 cp -r /usr/src/$(uname -r)/ .
 mv $(uname -r) source
 
